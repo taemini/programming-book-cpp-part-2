@@ -1,0 +1,67 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "clang++ build active file",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=c++2a",
+        "-stdlib=libc++",
+        "-g",
+        "${file}",
+        // "-lgtest", // link flag to add gtest library
+        // "-lgtest_main", // libk flag to add gtest_main library
+        // "-lgmock",
+        "-I",
+        "boost_1_75_0",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}",
+        "&&",
+        "${fileDirname}/${fileBasenameNoExtension}",
+        // "hello world",
+        // "A man, a plan, a canal, Panama!",
+        // "Madam, I'm Adam",
+        // "1 + 12 * ( 30 + 2) + 4",
+        // "1 2 3 4",
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+    // {
+    //   "label": "build & run", //It's name of the task , you can have several tasks
+    //   "type": "shell", //type can be either 'shell' or 'process' , more details will be given below
+    //   "command": "g++",
+    //   "args": [
+    //     "-g", //gnu debugging flag , only necessary if you want to perform debugging on file
+    //     "${file}", //${file} gives full path of the file
+    //     "-o",
+    //     "${workspaceFolder}\\build\\${fileBasenameNoExtension}", //output file name
+    //     "&&", //to join building and running of the file
+    //     "${workspaceFolder}\\build\\${fileBasenameNoExtension}"
+    //   ],
+    //   "group": {
+    //     "kind": "build", //defines to which group the task belongs
+    //     "isDefault": true
+    //   },
+    //   "presentation": {
+    //     //Explained in detail below
+    //     "echo": false,
+    //     "reveal": "always",
+    //     "focus": true,
+    //     "panel": "shared",
+    //     "clear": false,
+    //     "showReuseMessage": false
+    //   },
+    //   "problemMatcher": "$gcc"
+    // }
+  ]
+}

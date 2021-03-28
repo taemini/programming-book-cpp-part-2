@@ -1,0 +1,35 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    // you must install CodeLLDB to make break point work (https://github.com/microsoft/vscode-cpptools/issues/3829)
+    {
+      "name": "clang++ - Build and debug active file",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": ["1 + 12 * ( 30 + 2) + 4"],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "clang++ build active file"
+    }
+    // {
+    //   "name": "clang++ - Build and debug active file",
+    //   "type": "cppdbg",
+    //   "request": "launch",
+    //   "program": "${fileDirname}/${fileBasenameNoExtension}",
+    //   "args": [],
+    //   "stopAtEntry": true,
+    //   "cwd": "${workspaceFolder}",
+    //   "environment": [],
+    //   "externalConsole": false,
+    //   "MIMode": "lldb",
+    //   "preLaunchTask": "clang++ build active file"
+    // }
+  ]
+}

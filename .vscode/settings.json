@@ -1,0 +1,20 @@
+{
+  "files.associations": {
+    "cstddef": "cpp",
+    "functional": "cpp",
+    "limits": "cpp",
+    "vector": "cpp",
+    "chrono": "cpp",
+    "__tree": "cpp",
+    "bitset": "cpp",
+    "rope": "cpp",
+    "*.ipp": "cpp",
+    "stack": "cpp",
+    "iosfwd": "cpp",
+    "type_traits": "cpp",
+    "iostream": "cpp",
+    "filesystem": "cpp",
+    "algorithm": "cpp"
+  },
+  "cmake.configureOnOpen": false
+}
