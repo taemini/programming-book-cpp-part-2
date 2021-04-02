@@ -14,7 +14,19 @@
     "type_traits": "cpp",
     "iostream": "cpp",
     "filesystem": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "__mutex_base": "cpp",
+    "condition_variable": "cpp",
+    "future": "cpp",
+    "mutex": "cpp",
+    "memory_resource": "cpp",
+    "shared_mutex": "cpp",
+    "atomic": "cpp",
+    "__config": "cpp",
+    "queue": "cpp",
+    "typeinfo": "cpp",
+    "*.tcc": "cpp",
+    "random": "cpp"
   },
   "cmake.configureOnOpen": false
 }

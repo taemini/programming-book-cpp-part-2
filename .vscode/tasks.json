@@ -15,8 +15,8 @@
         // "-lgtest", // link flag to add gtest library
         // "-lgtest_main", // libk flag to add gtest_main library
         // "-lgmock",
-        "-I",
-        "boost_1_75_0",
+        // "-I",
+        // "boost_1_75_0",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}",
         "&&",
