@@ -26,7 +26,8 @@
     "queue": "cpp",
     "typeinfo": "cpp",
     "*.tcc": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "cstdlib": "cpp"
   },
   "cmake.configureOnOpen": false
 }
