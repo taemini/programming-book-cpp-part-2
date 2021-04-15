@@ -17,7 +17,7 @@
         // "-lgmock",
         // "-I",
         // "boost_1_75_0",
-        "-L/usr/local/Cellar/boost/1.75.0_2/lib/",
+        "-L/usr/local/lib",
         "-lboost_program_options-mt",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}",
